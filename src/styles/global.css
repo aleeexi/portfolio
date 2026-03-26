@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@theme {
+    --color-*: initial;
+    --color-black: #0C021A;
+    --color-dark-purple: #120C1A;
+    --color-white: #FFFEFA;
+    --color-lavender: #B39BC2;
+    --color-lilac: #CFBFD9;
+    --color-light-purple: #F2E9F6;
+    --color-purple: #633C7B;
+    --color-gray: #797979;
+
+    --font-fustat: 'Fustat', sans-serif;
+}
+
+@font-face {
+    font-family: 'Fustat';
+    src: url('../fonts/Fustat-Variable.ttf');
+}
