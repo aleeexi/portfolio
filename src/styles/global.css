@@ -12,6 +12,8 @@
     --color-gray: #797979;
 
     --font-fustat: 'Fustat', sans-serif;
+
+    --tracking-default: 6%;
 }
 
 @font-face {
