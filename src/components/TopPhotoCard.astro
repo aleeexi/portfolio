@@ -1,0 +1,20 @@
+---
+import '../styles/global.css';
+
+const { descrip } = Astro.props;
+
+const { pic } = Astro.props;
+---
+
+<div id="t-photo-card" class="border-black border-2 divide-y-2 divide-black
+flex flex-col gap-0">
+    <div id="t-photo-text" class="bg-light-purple">
+        <p class="text-black font-fustat -tracking-default text-lg font-bold
+        p-2">
+            {descrip}
+        </p>
+    </div>
+    <div id="t-photo-photo">
+        <img src={pic} class="object-cover"/>
+    </div>
+</div>

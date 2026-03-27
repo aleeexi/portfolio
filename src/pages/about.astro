@@ -1,0 +1,35 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageTitle from '../components/PageTitle.astro';
+import PageSubtitle from '../components/PageSubtitle.astro';
+import TopPhotoCard from '../components/TopPhotoCard.astro';
+import BottomPhotoCard from '../components/BottomPhotoCard.astro';
+---
+
+<Layout>
+	<div id="about-main" class="flex flex-col px-32 py-16 gap-0">
+        <div id="about-header" class="flex flex-row gap-16">
+            <img src="/photos/headshot.jpeg" class="object-cover h-100
+            border-black border-2">
+            <div id="about-header-text" class="flex flex-col">
+                <PageSubtitle subtitle="My name is"/>
+		        <PageTitle title="Alexi Manning"/>
+		        <PageSubtitle subtitle="My love for creative design started when I was creating collages in elementary school on Picsart, and has blossomed into a passion for designing pleasant and convenient user experiences! I discovered UX/UI design last year and have fallen in love ever since! I am interested in both technology and creative design, so I am fascinated by the intersection that UX/UI design sits at."/>
+                <PageSubtitle subtitle="In terms of creative endeavours, I also enjoy exploring graphic design, videography, video editing, fashion, crocheting, and photography! I am currently in my 'digicam warrior' phase, so you will usually see me with my digital camera ready at all times. Aside from my creative hobbies, I am a huge foodie! I love exploring new restaurants and cuisines everywhere I go :P From my photos, you will also notice that I love incorporating color in my life, especially in my hair!"/>
+            </div>
+        </div>
+
+		<div id="about-photos" class="grid grid-cols-5 py-32 gap-0 items-start">
+            <TopPhotoCard descrip="TWICE concert in Vancouver!"
+            pic="/photos/kpop.jpeg"/>
+            <BottomPhotoCard descrip="A crochet bandana that I was commissioned for."
+            pic="/photos/crochet.jpeg"/>
+            <TopPhotoCard descrip="Promo reel filming with my friends in UBC KABA!"
+            pic="/photos/friends.jpeg"/>
+            <BottomPhotoCard descrip="Enjoying DineOut Vancouver :P"
+            pic="/photos/food.jpeg"/>
+            <TopPhotoCard descrip="Camera always eats first..."
+            pic="/photos/digicam.jpeg"/>
+		</div>
+	</div>
+</Layout>
