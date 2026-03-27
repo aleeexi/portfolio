@@ -12,7 +12,7 @@ const { demo } = Astro.props;
 
 <div id="work-card" class="flex flex-row gap-0 items-end">
     <div id="work-demo" class="px-4 pt-4">
-        <video autoplay loop muted>
+        <video autoplay loop muted class="border-black border-2">
             <source src={demo} type="video/mp4"/>
         </video>
     </div>
@@ -44,7 +44,7 @@ const { demo } = Astro.props;
                 flex items-center justify-end
                 py-2 px-4
                 transition-all duration-300 hover:no-underline">
-                    Learn more >>
+                    Visit the website! >>
                 </a>
             </div>
         </div>

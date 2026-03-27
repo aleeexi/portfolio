@@ -3,8 +3,6 @@ import Layout from '../layouts/Layout.astro';
 import PageTitle from '../components/PageTitle.astro';
 import PageSubtitle from '../components/PageSubtitle.astro';
 import WorkCard from '../components/WorkCard.astro';
-
-
 ---
 
 <Layout>
@@ -16,13 +14,19 @@ import WorkCard from '../components/WorkCard.astro';
 		<div id="work-cards" class="flex flex-col py-32 gap-16">
 			<WorkCard title="UBC Kababayan Website"
 			brief="Combining the outdated UBC Kababayan website and Carrd website into one easily accessible and maintainable website with a distinctly Filipino design style."
-			type="Website" year="2026 (WIP)" link="https://google.com" demo="/demo-videos/KABA-Website.mp4"/>
+			type="Website" year="2026 (WIP)"
+			link="https://ubckaba.org"
+			demo="/demo-videos/KABA-Website.mp4"/>
 			<WorkCard title="meduCA"
 			brief="A retrofuturistic, space-themed wiki website to cleanly communicate the development of our 2025 bioengineering project, 'meduCA'."
-			type="Website" year="2025" link="https://google.com" demo="/demo-videos/KABA-Website.mp4"/>
+			type="Website" year="2025"
+			link="https://2025.igem.wiki/ubc-vancouver/"
+			demo="/demo-videos/meduCA.mp4"/>
 			<WorkCard title="UBC iGEM Website"
 			brief="Revamping the UBC iGEM website to engage and attract potential sponsors and members."
-			type="Website" year="2025" link="https://google.com" demo="/demo-videos/KABA-Website.mp4"/>
+			type="Website" year="2025"
+			link="https://ubcigem.com/"
+			demo="/demo-videos/iGEM-Website.mp4"/>
 		</div>
 	</div>
 </Layout>
