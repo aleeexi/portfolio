@@ -1,0 +1,55 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageTitle from '../components/PageTitle.astro';
+import PageSubtitle from '../components/PageSubtitle.astro';
+import Section from '../components/Section.astro';
+import PlayCard from '../components/PlayCard.astro';
+---
+
+<Layout>
+	<div id="play-main" class="flex flex-col px-32 py-16 gap-0">
+		<PageTitle title="Playground"/>
+		<PageSubtitle subtitle="Explore my creative endeavours; I love playing with different media!"/>
+
+		<div id="play-sections" class="flex flex-col py-32 gap-16">
+			<Section title="Graphics >>">
+				<div id="graphics" class="grid grid-cols-4 gap-x-4">
+					<PlayCard title="Elections Campaign"
+					brief="My road trip-themed campaign, showcasing my platform and creative design skills. I successfully ran for VP Creatives!"
+					type="Slide Deck + Graphic" stack="Figma, Adobe Photoshop" year="2026"
+					link="https://drive.google.com/drive/folders/1oJqnYrlgspIal0CZE3DltTg5revtDV4y?usp=sharing"
+					thumb="/thumbnails/KABA-Elections.jpg"/>
+					<PlayCard title="Junior Executive Hiring Package"
+					brief="A retro, postcard-themed hiring package for Junior Executive positions. We ended up overfilling positions with the abundance of qualified applicants!"
+					type="Hiring Package" stack="Figma, Adobe Photoshop" year="2026"
+					link="https://drive.google.com/file/d/1MsuZ7N3eTmC3tW1stJn2qeabeo8qP4U2/view?usp=sharing"
+					thumb="/thumbnails/KABA-Jr-Exec-Hiring.jpg"/>
+					<PlayCard title="UBC Kababayan Instagram Graphics"
+					brief="Various social media graphics that I designed for our Instagram account."
+					type="Graphics" stack="Adobe Photoshop, Adobe After Effects" year="2025-2026"
+					link="https://drive.google.com/drive/folders/11f8UJrXvSjO2WPvzNHezmZaB0k56CZCZ?usp=sharing"
+					thumb="/thumbnails/KABA-Graphics.png"/>
+					<PlayCard title="meduCA Vector Assets"
+					brief="Space-themed, retrofuturistic vector assets designed for our synthetic biology project."
+					type="Vector Assets" stack="Adobe Illustrator, Inkscape" year="2025"
+					link="https://2025.igem.wiki/ubc-vancouver/"
+					thumb="/thumbnails/iGEM-Vectors.jpg"/>
+				</div>
+			</Section>
+			<Section title="Merch >>">
+				<div id="merch" class="grid grid-cols-4 gap-x-4">
+					<PlayCard title="UBC Kababayan Hoodies"
+					brief="A handdrawn style hoodie of iconic Filipino elements for our 2025 merch line."
+					type="Merchandise Design" stack="Adobe Photoshop, ibisPaint" year="2025"
+					link="https://drive.google.com/file/d/1mnj0t6X3HJIzXeXkOHCW1iGwIXECDTqZ/view?usp=drive_link"
+					thumb="/thumbnails/KABA-Hoodies.jpg"/>
+					<PlayCard title="UBC iGEM Hoodies"
+					brief="A Stussy-inspired meduCA hoodie for our members to rep at the 2025 iGEM competition.."
+					type="Merchandise Design" stack="Adobe Photoshop, Canva" year="2025"
+					link="https://drive.google.com/file/d/1JIyTe2xv7gpOOy7NPDrcxfWBbzO9-_2l/view?usp=sharing"
+					thumb="/thumbnails/iGEM-Hoodies.jpg"/>
+				</div>
+			</Section>
+		</div>
+	</div>
+</Layout>

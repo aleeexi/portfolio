@@ -1,0 +1,56 @@
+---
+import '../styles/global.css';
+
+const { title } = Astro.props;
+const { brief } = Astro.props;
+const { type } = Astro.props;
+const { stack } = Astro.props;
+const { year } = Astro.props;
+const { link } = Astro.props;
+
+const { thumb } = Astro.props;
+---
+
+<div id="play-card" class="flex flex-col gap-0">
+    <p id="play-title" class="text-black font-fustat -tracking-default font-medium text-3xl
+    pb-2">
+        {title}
+    </p>
+    <div id="play-details" class="flex flex-col gap-0
+    border-black divide-black border-2 border-solid divide-solid divide-y-2">
+        <div id="play-brief" class="p-4">
+            <p class="text-black font-fustat -tracking-default text-lg font-medium">
+                {brief}
+            </p>
+        </div>
+        <div id="play-tags" class="grid grid-cols-2
+        divide-black divide-x-2">
+            <p id="play-type" class="text-black font-fustat -tracking-default text-base
+            flex items-center justify-center py-2">
+                {type}
+            </p>
+            <p id="play-type" class="text-black font-fustat -tracking-default text-base
+            flex items-center justify-center py-2">
+                {year}
+            </p>
+        </div>
+        <div id="play-stack">
+            <p id="play-type" class="text-black font-fustat -tracking-default text-base
+            flex items-center justify-center py-2">
+                {stack}
+            </p>
+        </div>
+        <div id="play-thumbnail">
+            <img src={thumb} class="object-cover">
+        </div>
+        <div id="play-link" class="bg-light-purple
+            transition-all duration-300 hover:bg-lavender">
+            <a href={link} target="_blank" class="text-black font-fustat -tracking-default text-lg font-bold underline
+            flex items-center justify-end
+            py-2 px-4
+            transition-all duration-300 hover:no-underline">
+                Take a look! >>
+            </a>
+        </div>
+    </div>
+</div>

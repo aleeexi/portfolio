@@ -1,0 +1,16 @@
+---
+import '../styles/global.css';
+
+const { title } = Astro.props;
+---
+
+<div id="section" class="border-black border-2 border-solid divide-black divide-y-2
+flex flex-col gap-0">
+    <h1 class="text-black font-fustat -tracking-default text-5xl font-medium
+    p-4 bg-lavender">
+        {title}
+    </h1>
+    <div id="section-cards" class="p-4">
+        <slot/>
+    </div>
+</div>
