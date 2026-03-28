@@ -10,39 +10,39 @@ const { link } = Astro.props;
 const { demo } = Astro.props;
 ---
 
-<div id="work-card" class="flex flex-row gap-0 items-end">
-    <div id="work-demo" class="px-4 pt-4">
-        <video autoplay loop muted class="border-black border-2">
+<div id="work-card" class="flex flex-col md:flex-row gap-0 items-end">
+    <div id="work-demo" class="px-0 md:px-4 pt-2 md:pt-4">
+        <video autoplay loop muted class="border-black border md:border-2">
             <source src={demo} type="video/mp4"/>
         </video>
     </div>
-    <div id="work-text" class="flex flex-col gap-0 basis-5xl">
-        <p id="work-title" class="text-black font-fustat -tracking-default text-5xl font-semibold
+    <div id="work-text" class="flex flex-col gap-0 basis-5xl py-4 md:py-0">
+        <p id="work-title" class="text-black font-fustat -tracking-default text-3xl md:text-5xl font-semibold
         pb-2">
             {title}
         </p>
         <div id="work-details" class="flex flex-col gap-0
-      border-black border-2 divide-black divide-y-2">
-            <p id="work-brief" class="text-black font-fustat text-lg -tracking-default font-semibold
-            py-2 px-4">
+      border-black border md:border-2 divide-black divide-y md:divide-y-2">
+            <p id="work-brief" class="text-black font-fustat text-base md:text-lg -tracking-default font-semibold
+            py-1 md:py-2 px-2 md:px-4">
                 {brief}
             </p>
             <div id="work-tags" class="grid grid-cols-2 gap-0
-            divide-black divide-x-2">
-                <p id="work-type" class="text-black font-fustat text-base -tracking-default
-                flex text-center items-center justify-center py-2">
+            divide-black divide-x md:divide-x-2">
+                <p id="work-type" class="text-black font-fustat text-sm md:text-base -tracking-default
+                flex text-center items-center justify-center py-1 md:py-2">
                     {type}
                 </p>
-                <p id="work-year" class="text-black font-fustat text-base -tracking-default
-                flex text-center items-center justify-center py-2">
+                <p id="work-year" class="text-black font-fustat text-sm md:text-base -tracking-default
+                flex text-center items-center justify-center py-1 md:py-2">
                     {year}
                 </p>
             </div>
             <div id="work-link" class="bg-light-purple
             transition-all duration-300 hover:bg-lavender">
-                <a href={link} target="_blank" class="text-black font-fustat text-lg font-bold -tracking-default underline
+                <a href={link} target="_blank" class="text-black font-fustat text-base md:text-lg font-bold -tracking-default underline
                 flex items-center justify-end
-                py-2 px-4
+                py-1 md:py-2 px-2 md:px-4
                 transition-all duration-300 hover:no-underline">
                     Case study coming soon! Visit the website >>
                 </a>

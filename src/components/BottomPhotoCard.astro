@@ -6,13 +6,14 @@ const { descrip } = Astro.props;
 const { pic } = Astro.props;
 ---
 
-<div id="t-photo-card" class="border-black border-2 divide-y-2
+<div id="t-photo-card" class="border-black border md:border-2 divide-y md:divide-y-2
+mx-8 md:mx-0
 flex flex-col gap-0">
     <div id="t-photo-photo">
         <img src={pic} class="object-cover"/>
     </div>
     <div id="t-photo-text" class="bg-light-purple">
-        <p class="text-black font-fustat -tracking-default text-lg font-bold
+        <p class="text-black font-fustat -tracking-default text-sm md:text-lg font-bold
         p-2">
             {descrip}
         </p>
